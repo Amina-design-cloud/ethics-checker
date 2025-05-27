@@ -1,0 +1,30 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>學術倫理違規判斷系統</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>學術倫理違規判斷系統</h1>
+    <p class="author">作者：清大材料系 鄭承恩</p>
+  </header>
+  <main>
+    <label for="topic-select">請選擇判斷主題：</label>
+    <select id="topic-select">
+      <option value="">--請選擇--</option>
+      <option value="plagiarism">抄襲判斷</option>
+      <option value="ghostwriting">代寫代做</option>
+      <option value="reuse">重複使用</option>
+      <option value="falsification">資料造假</option>
+      <option value="citation">引用錯誤</option>
+    </select>
+    <div id="questions"></div>
+    <div id="result"></div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
