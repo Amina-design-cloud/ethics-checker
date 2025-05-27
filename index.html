@@ -1,19 +1,14 @@
-<!-- index.html -->
-<!DOCTYPE html>
-<html lang="zh-Hant">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>學術倫理違規判斷系統</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <header>
-    <h1>學術倫理違規判斷系統</h1>
-    <p class="author">作者：清大材料系 鄭承恩</p>
-  </header>
-  <main>
-    <label for="topic-select">請選擇判斷主題：</label>
+<main>
+  <section id="home">
+    <h2>系統簡介</h2>
+    <p>
+      本系統為「學術倫理違規判斷系統」，由清大材料系鄭承恩設計，旨在協助大學生自我檢查是否有潛在違反學術誠信的行為。
+    </p>
+    <p>
+      許多學生在撰寫作業或報告時，可能無意間觸犯了抄襲、代寫、重複使用、資料造假或錯誤引用的問題。<br />
+      本系統希望透過簡單的問答流程，提升學術誠信意識，降低違規風險，打造更健康的學術環境。
+    </p>
+    <label for="topic-select"><strong>請選擇你想要判斷的主題：</strong></label>
     <select id="topic-select">
       <option value="">--請選擇--</option>
       <option value="plagiarism">抄襲判斷</option>
@@ -22,9 +17,8 @@
       <option value="falsification">資料造假</option>
       <option value="citation">引用錯誤</option>
     </select>
-    <div id="questions"></div>
-    <div id="result"></div>
-  </main>
-  <script src="script.js"></script>
-</body>
-</html>
+  </section>
+
+  <div id="questions" style="display:none;"></div>
+  <div id="result"></div>
+</main>
